@@ -37,7 +37,7 @@ function App() {
           <span className="logo-text">MovieFlix</span>
         </div>
         <div className="nav-right">
-          <button className="nav-button">Sign In</button>
+          <a href="https://mvie-flix-frontend.vercel.app/login.html" className="nav-button">Sign In</a>
         </div>
       </header>
 
