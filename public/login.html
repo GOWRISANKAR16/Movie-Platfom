@@ -29,7 +29,7 @@
          p {
              margin: 0.5rem 0;
         }
-        /* Style the background of Netflix */
+        /* Style the background */
          img {
              width: 100%;
         }
@@ -50,20 +50,29 @@
              background: rgba(0, 0, 0, 0.65);
              box-shadow: inset 30px 10px 150px #000000;
         }
-        /* Style the Netflix logo */
+        /* Style the Movie Flix logo */
          .logo {
              position: relative;
              z-index: 2;
              height: 90px;
         }
-         .logo img {
+         .logo-text-brand {
+             font-size: 2rem;
+             font-weight: 700;
+             color: #e50914;
+             letter-spacing: 0.05em;
+         }
+         .logo img,
+         .logo .logo-text-brand {
              margin-left: 7%;
              padding-top: 10px;
-             width: 170px;
              position: absolute;
              top: 20px;
              left: 40px;
-        }
+         }
+         .logo img {
+             width: 170px;
+         }
         /* Style login form container */
          .main {
              position: relative;
@@ -299,7 +308,7 @@
          .more a:hover, .signup a:hover {
              text-decoration: underline;
         }
-        /* Style Netflix footer */
+        /* Style footer */
          footer {
              position: absolute;
              margin-top: 50px;
@@ -346,7 +355,7 @@
    <body>
       <header class="banner">
          <div class="logo">
-            <a href="/"><img src="https://i.ibb.co/SNKRx9w/Netflixlogo.png" alt="MovieFlix"></a>
+            <a href="/"><span class="logo-text-brand">MOVIE FLIX</span></a>
          </div>
          <div class="main">
             <div class="form1">
