@@ -1,5 +1,6 @@
 import { render, screen } from '@testing-library/react'
 import { vi } from 'vitest'
+import { MemoryRouter } from 'react-router-dom'
 import App from './App'
 import * as tmdb from './tmdb/api'
 
@@ -29,8 +30,12 @@ const mockData = {
 tmdb.fetchHomePageData.mockResolvedValue(mockData)
 
 describe('App', () => {
-  it('renders hero title and row title', async () => {
-    render(<App />)
+  it('renders home with hero title and row title', async () => {
+    render(
+      <MemoryRouter initialEntries={['/']}>
+        <App />
+      </MemoryRouter>,
+    )
 
     const heroTitle = await screen.findByText(/Money Heist/i)
     const rowTitle = await screen.findByText(/Trending Now/i)

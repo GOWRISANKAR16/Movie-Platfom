@@ -10,11 +10,13 @@
     "preview": "vite preview",
     "test": "vitest",
     "test:ui": "vitest --ui",
-    "check:tmdb": "node scripts/checkTmdbApi.mjs"
+    "check:tmdb": "node scripts/checkTmdbApi.mjs",
+    "check:backend": "node scripts/checkBackendApi.mjs"
   },
   "dependencies": {
     "react": "^19.2.0",
-    "react-dom": "^19.2.0"
+    "react-dom": "^19.2.0",
+    "react-router-dom": "^7.13.1"
   },
   "devDependencies": {
     "@eslint/js": "^9.39.1",
